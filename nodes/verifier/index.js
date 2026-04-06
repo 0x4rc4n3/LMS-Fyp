@@ -1,0 +1,1 @@
+const express = require('express'); const app = express(); app.use(express.json()); app.get('/', (req, res) => res.send('Verifier Online')); app.listen(3002, () => console.log('?? Verifier (3002) Ready'));

@@ -1,0 +1,1 @@
+const express = require('express'); const app = express(); app.use(express.json()); app.get('/', (req, res) => res.send('Issuer Online')); app.listen(3001, () => console.log('?? Issuer (3001) Ready'));

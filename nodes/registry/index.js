@@ -1,0 +1,1 @@
+const express = require('express'); const app = express(); app.use(express.json()); app.get('/', (req, res) => res.send('Registry Online')); app.listen(3003, () => console.log('?? Registry (3003) Ready'));

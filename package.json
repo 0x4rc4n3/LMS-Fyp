@@ -1,0 +1,22 @@
+{
+  "name": "did-research-platform",
+  "version": "1.0.0",
+  "description": "Post-Quantum DID Research Platform — FYP",
+  "scripts": {
+    "issuer": "node nodes/issuer/index.js",
+    "verifier": "node nodes/verifier/index.js",
+    "registry": "node nodes/registry/index.js",
+    "start": "concurrently \"npm run registry\" \"npm run issuer\" \"npm run verifier\""
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.22.1",
+    "js-sha3": "^0.9.3",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
